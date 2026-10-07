@@ -1,0 +1,47 @@
+# Local Python environment
+.venv/
+venv/
+env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+
+# Notebook and tool state
+.ipynb_checkpoints/
+.yolo/
+runs/
+wandb/
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dataset media and generated annotation caches
+RAD/images/*
+!RAD/images/*.yaml
+RAD/videos_without_audio/
+*.cache
+
+# Extracted video frames and large generated media
+results/video_sequences/
+results/*.mp4
+results/*.avi
+results/*.mov
+results/*.mkv
+
+# Generated inference logs
+results/*.csv
+
+# Intermediate and recovery model checkpoints
+weights/*_epoch*.pt
+weights/*_last.pt
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp

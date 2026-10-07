@@ -1,0 +1,12 @@
+path: D:\updated_fyp\RAD
+train: images/train/images
+val: images/valid/images
+test: images/test/images
+nc: 6
+names:
+- LMVs
+- HMVs
+- Road_Damages
+- Unsurfaced_Roads
+- Pedestrians
+- Speed_Bumps
