@@ -1,0 +1,92 @@
+{
+  "model": "YOLO26s",
+  "tracker": "ByteTrack",
+  "weights": "results\\training\\yolo26s_rad_25ep_gpu\\weights\\best.pt",
+  "videos_evaluated": 5,
+  "max_frames_per_video": 300,
+  "compatibility": "passed",
+  "mota": null,
+  "motp": null,
+  "ground_truth_id_switches": null,
+  "metrics_unavailable_reason": "RAD videos do not include ground-truth track IDs or bounding-box annotations for these sequences.",
+  "aggregate": {
+    "frames_processed": 1500,
+    "video_duration_seconds": 49.99666777740753,
+    "processing_fps": 34.610485155115654,
+    "latency_ms_per_frame": 28.89297839999199,
+    "mean_track_continuity_ratio": 0.9291850479062944,
+    "total_fragmented_predicted_tracks": 42
+  },
+  "videos": [
+    {
+      "video": "RAD\\videos_without_audio\\10th July-20231125T045234Z-001\\10th July\\111_10-07-2023.mp4",
+      "source_fps": 30.0,
+      "frames_processed": 300,
+      "duration_seconds": 10.0,
+      "detections_with_track_ids": 1104,
+      "unique_predicted_tracks": 19,
+      "frames_with_tracks_ratio": 1.0,
+      "track_continuity_ratio_mean": 0.9639981623723578,
+      "fragmented_predicted_tracks": 6,
+      "fragmentation_ratio": 0.3157894736842105,
+      "processing_fps": 19.56912645196367,
+      "latency_ms_per_frame": 51.10090133326594
+    },
+    {
+      "video": "RAD\\videos_without_audio\\10th July-20231125T045234Z-001\\10th July\\112_10-07-2023.mp4",
+      "source_fps": 30.0,
+      "frames_processed": 300,
+      "duration_seconds": 10.0,
+      "detections_with_track_ids": 1218,
+      "unique_predicted_tracks": 27,
+      "frames_with_tracks_ratio": 1.0,
+      "track_continuity_ratio_mean": 0.9168141714873076,
+      "fragmented_predicted_tracks": 11,
+      "fragmentation_ratio": 0.4074074074074074,
+      "processing_fps": 43.10601915350638,
+      "latency_ms_per_frame": 23.198616333344642
+    },
+    {
+      "video": "RAD\\videos_without_audio\\10th July-20231125T045234Z-001\\10th July\\113_10-07-2023.mp4",
+      "source_fps": 30.0,
+      "frames_processed": 300,
+      "duration_seconds": 10.0,
+      "detections_with_track_ids": 1110,
+      "unique_predicted_tracks": 28,
+      "frames_with_tracks_ratio": 1.0,
+      "track_continuity_ratio_mean": 0.9188705951341651,
+      "fragmented_predicted_tracks": 9,
+      "fragmentation_ratio": 0.32142857142857145,
+      "processing_fps": 46.03831336067793,
+      "latency_ms_per_frame": 21.721038999967277
+    },
+    {
+      "video": "RAD\\videos_without_audio\\10th July-20231125T045234Z-001\\10th July\\114_10-07-2023.mp4",
+      "source_fps": 30.0,
+      "frames_processed": 300,
+      "duration_seconds": 10.0,
+      "detections_with_track_ids": 734,
+      "unique_predicted_tracks": 15,
+      "frames_with_tracks_ratio": 0.9966666666666667,
+      "track_continuity_ratio_mean": 0.8865091945091945,
+      "fragmented_predicted_tracks": 5,
+      "fragmentation_ratio": 0.3333333333333333,
+      "processing_fps": 42.8244427243763,
+      "latency_ms_per_frame": 23.35115033337691
+    },
+    {
+      "video": "RAD\\videos_without_audio\\10th July-20231125T045234Z-001\\10th July\\115_10-07-2023.mp4",
+      "source_fps": 30.01,
+      "frames_processed": 300,
+      "duration_seconds": 9.99666777740753,
+      "detections_with_track_ids": 1276,
+      "unique_predicted_tracks": 23,
+      "frames_with_tracks_ratio": 1.0,
+      "track_continuity_ratio_mean": 0.9597331160284466,
+      "fragmented_predicted_tracks": 11,
+      "fragmentation_ratio": 0.4782608695652174,
+      "processing_fps": 39.85145767664781,
+      "latency_ms_per_frame": 25.093185000005178
+    }
+  ]
+}

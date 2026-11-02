@@ -1,0 +1,59 @@
+[
+  {
+    "model": "YOLOv8s",
+    "weights": "weights\\rad_baseline_clear_best.pt",
+    "test_images": 1263,
+    "precision": 0.8619548939249088,
+    "recall": 0.7491165407610888,
+    "map50": 0.8178469066429092,
+    "map50_95": 0.4596709419224716,
+    "per_class_ap50": {
+      "LMVs": 0.9554132443476673,
+      "HMVs": 0.9785997208308294,
+      "Road_Damages": 0.5880404362282448,
+      "Unsurfaced_Roads": 0.696271393828355,
+      "Pedestrians": 0.900092870774166,
+      "Speed_Bumps": 0.7886637738481923
+    },
+    "inference_fps_including_batch_overhead": 84.47632374433891,
+    "weight_size_mb": 21.45273780822754
+  },
+  {
+    "model": "YOLO11s",
+    "weights": "results\\training\\yolo11s_rad_25ep_gpu\\weights\\best.pt",
+    "test_images": 1263,
+    "precision": 0.8331632350999768,
+    "recall": 0.7464145351349812,
+    "map50": 0.8060265000498433,
+    "map50_95": 0.45024154105193287,
+    "per_class_ap50": {
+      "LMVs": 0.9448281991650623,
+      "HMVs": 0.981181446673813,
+      "Road_Damages": 0.5506104607951693,
+      "Unsurfaced_Roads": 0.6877695185124052,
+      "Pedestrians": 0.8938784724791511,
+      "Speed_Bumps": 0.7778909026734585
+    },
+    "inference_fps_including_batch_overhead": 67.49991923244446,
+    "weight_size_mb": 18.267053604125977
+  },
+  {
+    "model": "YOLO26s",
+    "weights": "results\\training\\yolo26s_rad_25ep_gpu\\weights\\best.pt",
+    "test_images": 1263,
+    "precision": 0.804740949959721,
+    "recall": 0.7864736334291916,
+    "map50": 0.8257418285478596,
+    "map50_95": 0.4600194572096885,
+    "per_class_ap50": {
+      "LMVs": 0.9550670338132479,
+      "HMVs": 0.9812869522869975,
+      "Road_Damages": 0.5810228371779088,
+      "Unsurfaced_Roads": 0.7168010862492669,
+      "Pedestrians": 0.9070628611256032,
+      "Speed_Bumps": 0.8132102006341333
+    },
+    "inference_fps_including_batch_overhead": 59.67468508426672,
+    "weight_size_mb": 19.352421760559082
+  }
+]

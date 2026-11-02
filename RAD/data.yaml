@@ -1,4 +1,4 @@
-path: D:\updated_fyp\RAD
+path: D:/fyp_dashcam_tracking/RAD
 train: images/train/images
 val: images/valid/images
 test: images/test/images
