@@ -10,7 +10,7 @@ DATA = ROOT / "RAD" / "data.yaml"
 def train(model_name: str, batch: int = 8) -> None:
     """Train one model and save its complete Ultralytics run separately."""
     print(f"\nStarting {model_name} training with batch={batch}", flush=True)
-    model = YOLO(str(ROOT / "weights" / f"{model_name}.pt"))
+    model = YOLO(f"{model_name}.pt")
     model.train(
         data=str(DATA),
         epochs=25,

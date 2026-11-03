@@ -10,7 +10,11 @@ from ultralytics import YOLO
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "results" / "outputs"
 NAMES = ["LMVs", "HMVs", "Road_Damages", "Unsurfaced_Roads", "Pedestrians", "Speed_Bumps"]
-MODELS = {"YOLOv8n": ROOT/"weights"/"rad_baseline_n_best.pt", "YOLOv8s": ROOT/"weights"/"rad_baseline_clear_best.pt", "YOLOv8m": ROOT/"weights"/"rad_baseline_m_best.pt"}
+MODELS = {
+    "YOLOv8s": ROOT / "results" / "weights" / "yolov8s_best.pt",
+    "YOLO11s": ROOT / "results" / "weights" / "yolo11s_best.pt",
+    "YOLO26s": ROOT / "results" / "weights" / "yolo26s_best.pt",
+}
 
 
 def evaluate():

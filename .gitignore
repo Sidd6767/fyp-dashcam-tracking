@@ -39,6 +39,7 @@ results/*.csv
 # Intermediate and recovery model checkpoints
 weights/*_epoch*.pt
 weights/*_last.pt
+results/training/**/weights/epoch*.pt
 
 # Temporary files
 *.tmp

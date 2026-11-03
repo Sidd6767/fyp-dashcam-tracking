@@ -16,7 +16,7 @@ import cv2
 from ultralytics import YOLO
 
 ROOT = Path(__file__).resolve().parent.parent
-WEIGHTS = ROOT / "results" / "training" / "yolo26s_rad_25ep_gpu" / "weights" / "best.pt"
+WEIGHTS = ROOT / "results" / "weights" / "yolo26s_best.pt"
 VIDEO_ROOT = ROOT / "RAD" / "videos_without_audio"
 OUTPUT = ROOT / "results" / "tracking" / "yolo26_bytetrack_benchmark.json"
 VIDEO_COUNT = 5

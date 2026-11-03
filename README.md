@@ -79,7 +79,7 @@ The trained YOLOv8s model runs at approximately 23 FPS at 640 pixels on this mac
 python .\python_scripts\detect_video.py --video "D:\path\to\input.mp4"
 ```
 
-The default model is `weights/rad_baseline_clear_best.pt`. The script processes at most 10 seconds and writes:
+The default model is `results/weights/yolov8s_best.pt`. The script processes at most 10 seconds and writes:
 
 - An annotated MP4 video
 - A CSV file containing frame number, timestamp, class, confidence, and bounding-box coordinates
@@ -98,7 +98,7 @@ python .\python_scripts\detect_video.py `
 | Folder | Contents |
 |---|---|
 | `python_scripts/` | Active Python source files. |
-| `weights/` | Pretrained weights and all RAD-trained checkpoints. |
+| `results/weights/` | Final `best.pt` and `last.pt` weights for the evaluated detector models. |
 | `results/` | Training logs, evaluation outputs, charts, videos, and presentation artifacts. |
 
 Training logs are under `results/training/`; presentation charts and reports are under `results/outputs/`.

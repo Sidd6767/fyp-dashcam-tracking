@@ -59,7 +59,7 @@ def box_iou(a, b):
 
 def failure_cases():
     fail = OUT / "failure_cases"; fail.mkdir(exist_ok=True)
-    model = YOLO(str(ROOT / "weights" / "rad_baseline_clear_best.pt"))
+    model = YOLO(str(ROOT / "results" / "weights" / "yolov8s_best.pt"))
     candidates = []
     images = sorted(p for p in TEST_IMAGES.glob("*") if p.suffix.lower() in {".jpg", ".jpeg", ".png"})
     for index, path in enumerate(images, 1):
@@ -106,7 +106,7 @@ def curves():
 
 
 def speed():
-    weights = {"YOLOv8n": ROOT/"weights"/"rad_baseline_n_best.pt", "YOLOv8s": ROOT/"weights"/"rad_baseline_clear_best.pt", "YOLOv8m": ROOT/"weights"/"rad_baseline_m_best.pt"}
+    weights = {"YOLOv8s": ROOT/"results"/"weights"/"yolov8s_best.pt", "YOLO11s": ROOT/"results"/"weights"/"yolo11s_best.pt", "YOLO26s": ROOT/"results"/"weights"/"yolo26s_best.pt"}
     images = sorted(TEST_IMAGES.glob("*.jpg"))[:20]; results = {}
     for name, weight in weights.items():
         model = YOLO(str(weight)); results[name] = {}

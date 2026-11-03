@@ -13,9 +13,9 @@ DATA = ROOT / "RAD" / "data.yaml"
 OUTPUT_DIR = ROOT / "results" / "model_comparison"
 
 MODELS = {
-    "YOLOv8s": ROOT / "weights" / "rad_baseline_clear_best.pt",
-    "YOLO11s": ROOT / "results" / "training" / "yolo11s_rad_25ep_gpu" / "weights" / "best.pt",
-    "YOLO26s": ROOT / "results" / "training" / "yolo26s_rad_25ep_gpu" / "weights" / "best.pt",
+    "YOLOv8s": ROOT / "results" / "weights" / "yolov8s_best.pt",
+    "YOLO11s": ROOT / "results" / "weights" / "yolo11s_best.pt",
+    "YOLO26s": ROOT / "results" / "weights" / "yolo26s_best.pt",
 }
 
 

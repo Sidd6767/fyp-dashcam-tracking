@@ -24,7 +24,7 @@ CLASS_NAMES = [
     "Speed_Bumps",
 ]
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WEIGHTS = PROJECT_ROOT / "weights" / "rad_baseline_clear_best.pt"
+DEFAULT_WEIGHTS = PROJECT_ROOT / "results" / "weights" / "yolov8s_best.pt"
 
 
 def parse_args() -> argparse.Namespace:
